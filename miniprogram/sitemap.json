@@ -1,0 +1,9 @@
+{
+  "desc": "公共出行服务",
+  "rules": [
+    { "action": "allow", "page": "pages/home/index" },
+    { "action": "allow", "page": "pages/routes/index" },
+    { "action": "allow", "page": "pages/service/index" },
+    { "action": "disallow", "page": "*" }
+  ]
+}

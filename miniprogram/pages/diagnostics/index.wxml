@@ -1,0 +1,6 @@
+<view style="padding:32px;background:#f3f2ec;min-height:100vh;color:#243c26;">
+  <view style="font-size:25px;font-weight:bold;">黎安启动检查 1105C</view>
+  <view style="margin-top:20px;font-size:17px;">看到此文字表示手机页面模板已经加载。</view>
+  <view style="margin-top:20px;">{{status}}</view>
+  <button bindtap="home" style="margin-top:30px;">进入出行首页</button>
+</view>

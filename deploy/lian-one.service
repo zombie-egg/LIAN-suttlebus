@@ -1,0 +1,22 @@
+[Unit]
+Description=Lian One shuttle website
+After=network-online.target k3s.service
+Wants=network-online.target
+
+[Service]
+DynamicUser=yes
+WorkingDirectory=/srv/lian-one
+Environment=NODE_ENV=production
+EnvironmentFile=/etc/lian-one.env
+ExecStart=/opt/lian-one-node/bin/node /srv/lian-one/server/index.js
+StateDirectory=lian-one
+Restart=on-failure
+RestartSec=3
+NoNewPrivileges=yes
+PrivateTmp=yes
+ProtectSystem=strict
+ProtectHome=yes
+UMask=0077
+
+[Install]
+WantedBy=multi-user.target

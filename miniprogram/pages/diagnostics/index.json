@@ -1,0 +1,6 @@
+{
+  "navigationBarTitleText": "黎安启动检查 1105C",
+  "usingComponents": {},
+  "renderer": "webview",
+  "componentFramework": "glass-easel"
+}

@@ -1,0 +1,53 @@
+{
+  "pages": [
+    "pages/home/index",
+    "pages/routes/index",
+    "pages/service/index",
+    "pages/profile/index",
+    "pages/driver/index",
+    "pages/diagnostics/index"
+  ],
+  "window": {
+    "navigationBarTitleText": "黎安一站式",
+    "navigationBarBackgroundColor": "#eeefe5",
+    "navigationBarTextStyle": "black",
+    "backgroundColor": "#f3f2ec"
+  },
+  "tabBar": {
+    "color": "#8b947c",
+    "selectedColor": "#355a44",
+    "backgroundColor": "#e9eddf",
+    "borderStyle": "white",
+    "list": [
+      {
+        "pagePath": "pages/home/index",
+        "text": "出行",
+        "iconPath": "assets/tabbar/travel.png",
+        "selectedIconPath": "assets/tabbar/travel-active.png"
+      },
+      {
+        "pagePath": "pages/routes/index",
+        "text": "线路",
+        "iconPath": "assets/tabbar/routes.png",
+        "selectedIconPath": "assets/tabbar/routes-active.png"
+      },
+      {
+        "pagePath": "pages/service/index",
+        "text": "服务",
+        "iconPath": "assets/tabbar/services.png",
+        "selectedIconPath": "assets/tabbar/services-active.png"
+      },
+      {
+        "pagePath": "pages/profile/index",
+        "text": "我的",
+        "iconPath": "assets/tabbar/profile.png",
+        "selectedIconPath": "assets/tabbar/profile-active.png"
+      }
+    ]
+  },
+  "sitemapLocation": "sitemap.json",
+  "entryPagePath": "pages/home/index",
+  "renderer": "webview",
+  "componentFramework": "glass-easel",
+  "lazyCodeLoading": "requiredComponents"
+}
