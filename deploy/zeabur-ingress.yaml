@@ -43,7 +43,8 @@ spec:
       name: lian-acme-account
     solvers:
       - http01:
-          ingress: {}
+          ingress:
+            name: website
 ---
 apiVersion: networking.k8s.io/v1
 kind: Ingress
@@ -66,4 +67,4 @@ spec:
               service:
                 name: website
                 port:
-                  name: http
+                  number: 3100
